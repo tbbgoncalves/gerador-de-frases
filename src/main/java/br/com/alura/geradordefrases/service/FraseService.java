@@ -14,6 +14,6 @@ public class FraseService {
     public FraseDTO obterFrase() {
         Frase frase = fraseRepository.obterFrase();
 
-        return new FraseDTO(frase.getId(), frase.getTitulo(), frase.getFrase(), frase.getPersonagem(), frase.getPoster());
+        return new FraseDTO(frase.getTitulo(), frase.getFrase(), frase.getPersonagem(), frase.getPoster());
     }
 }
